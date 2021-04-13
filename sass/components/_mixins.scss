@@ -1,0 +1,21 @@
+@mixin radius($border){
+    border-radius:$border;
+}
+@mixin lineheight($lheight){
+    line-height:$lheight;
+}
+@mixin width($value){
+    width:$value;
+}
+
+@mixin laptop {
+	@media screen and (max-width:1180px) {
+	  @content;
+	}
+  }
+@mixin phone{
+  @media screen and (max-width:300px) {
+    @content;
+  }
+
+}

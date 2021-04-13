@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href="dist/webpage.css" rel="stylesheet">
+
+    <title>
+        Webpage using gulp
+    </title>
+</head>
+
+<body>
+
+    <header class="regular-font white">
+        <div class="container">
+            <nav class="display-f">
+                <p class="font-titlel">autocryp</p>
+                <div id="side" class="sidenav">
+                    <a  href="javascript:void(0)" class="closebtn white " id="sideclose">&times;</a>
+                    <a class="font-titles white" href="javascript:void(0)">Benifit</a>
+                    <a class="font-titles white" href="javascript:void(0)">Pricing</a>
+                    <a class="font-titles white" href="javascript:void(0)">Testimonials</a>
+                    <a class="font-titles white" href="javascript:void(0)">Client</a>
+        
+                </div>
+        
+                <a  href="javascript:void(0)"><span class="span white float-right" id="sideopen"> &#9776</span></a>
+                <ul>
+                    <li class="font-titles display-ib"><a class="white" href="javascript.void(0)">Benifit</a></li>
+                    <li class="font-titles display-ib"><a class="white" href="javascript.void(0)">Pricing</a></li>
+                    <li class="font-titles display-ib"><a class="white" href="javascript.void(0)">Testimonials</a></li>
+                    <li class="font-titles display-ib"><a class="white" href="javascript.void(0)">Client</a></li>
+                </ul>
+                <div class="buttons">
+                    <a class="login white" href="javascript.void(0)">Login</a>
+                    <a class="btn white fontweight-b radius-s primary-button fontweight-b"
+                        href="javascript.void(0)">Register</a>
+                </div>
+            </nav>
+
+            <div class="display-ib header-content">
+                <h1 class="font-titlexxl bold-font ">Easiest way to<br> mining your bitcoin</h1>
+                <p class="ta-left font-titles">Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds
+                    of Digital Assets in Indonesia.
+                    Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.</p>
+                <a class="btn fontweight-b radius-m secondary-padding font-titlem fontweight-b"
+                    href="javascript.void(0)">Get started</a>
+            </div>
+            <img class="display-ib" src="artboard.png" alt="image">
+        </div>
+
+    </header>
+
+    <main>
+        <section class="initialsection">
+            <div class="container">
+                <div class="sub-section display-f ta-center">
+                    <div class="sub-inner-section  regular-font  ta-left">
+                        <img src="shape.png" alt="image">
+                        <h2 class="font-titlem">Secure Every Transaction</h2>
+                        <hr>
+                        <p class="font-titles grey">Your account is protected by
+                            Multifactor Authentication using a combination of email, SMS and Google Authenticator.</p>
+                    </div>
+                    <div class="sub-inner-section regular-font ta-left">
+                        <img src="shape1.png" alt="image">
+                        <h2 class="font-titlem">Easiest To Use</h2>
+                        <hr>
+                        <p class="font-titles grey">
+                            You only need 1 account to do all
+                            Bitcoin transactions whether it is buying, selling, investing or trading.
+                        </p>
+                    </div>
+                    <div class="sub-inner-section regular-font ta-left">
+                        <img src="shape2.png" alt="image">
+                        <h2 class="font-titlem">Fastest Mining</h2>
+                        <hr>
+                        <p class="font-titles grey">
+                            The Rupiah deposit can be processed instantly
+                            and Rupiah withdrawal is processed in less than 1 business day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section ta-center">
+            <div class="container">
+                <h3 class="font-titlexl regular-font fontweight-b  ">Paid plan starts with a 7-day free trial,<br> No
+                    credit card required</h3>
+                <div class="tabs">
+                    <button onclick="change_month()"
+                        class="btn-padding fontweight-b regular-font third-button button outline">MONTHLY</button><button
+                        onclick="change_year()"
+                        class="btn-padding button outline regular-font fontweight-b third-button">YEARLY - 2 MONTH
+                        FREE</button>
+                </div>
+                <div class="slider display-f">
+                    <div class="  start-slider display-ib">
+                        <h4 class="font-titlenormal violet regular-font fontweight-b">Starter</h4>
+                        <p class="font-titlelarge regular-font green price" id="price1">$10</p>
+                        <p class="grey regular-font" id="text1">Per Month</p>
+                        <ul class="font-titles grey regular-font">
+                            <li>1 Pixel ID*</li>
+                            <li>URL</li>
+                            <li>Up to 200 shortened links / month</li>
+                        </ul>
+                        <a class="btn fontweight-b regular-font radius-s secondary-padding"
+                            href="javascript.void(0)">START FREE TRIAL</a>
+                    </div>
+                    <div class=" professional-slider display-ib">
+                        <h4 class="font-titlenormal violet regular-font fontweight-b">Professional</h4>
+                        <p class="font-titlelarge regular-font price green" id="price2">$29</p>
+                        <p class="grey regular-font" id="text2">Per Month</p>
+                        <ul class="font-titles grey regular-font">
+                            <li>5 Pixels ID*</li>
+                            <li>1 Custom URL</li>
+                            <li>Up to 1,000 shortened links / month</li>
+                            <li>5 Team Member</li>
+                        </ul>
+                        <a class="btn fontweight-b regular-font radius-s secondary-padding"
+                            href="javascript.void(0)">START FREE TRIAL</a>
+                    </div>
+                    <div class="business-slider display-ib">
+                        <h4 class="font-titlenormal violet regular-font fontweight-b">Business</h4>
+                        <p class="font-titlelarge regular-font price green" id="price3">$49</p>
+                        <p class="grey regular-font" id="text3">Per Month</p>
+                        <ul class="font-titles grey regular-font">
+                            <li>Unlimited Pixels ID</li>
+                            <li>Unlimited Custom URL</li>
+                            <li>Unlimited shortened links / month</li>
+                            <li>Unlimited Member</li>
+                        </ul>
+                        <a class="btn fontweight-b regular-font radius-s secondary-padding"
+                            href="javascript.void(0)">START FREE TRIAL</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section clearfix">
+            <div class="container ">
+                <div class="box display-ib">
+                    <img src="group-5.png" alt="image">
+                    <h4 class="font-titlexl regular-font dark-blue fontweight-m">What<br>customers say</h4>
+                </div>
+                <div class="main-box f-right"></div>
+
+                <div class="wrapper f-right">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                          <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="green-bg">
+                                    <img src="mark.png">
+                                    <p class="white height font-titlem regular-font">"I started driving with Uber because I liked the idea that my own car could make me money. 
+                                        After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                                    <p class="white font-titlem margin regular-font">Brandon Roger /<span class="white regular-font font-titlem">OWW Studio</span></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="div">
+                                    <img src="group-7.png">
+                                    <p class="font-titlem height grey regular-font">"I wanted something where I could meet new people and get out of the house. 
+                                        Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"</p>
+                                    <p class="font-titlem dark-blue margin regular-font">Sean Walker /<span class="opacity-blue regular-font font-titlem">OWW Studio</span></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="div">
+                                    <img src="group-7.png">
+                                    <p class="font-titlem height grey regular-font">"Uber enables me to have the creative freedom for baking my cakes and also driving on the side 
+                                        so I can make more money and also have my dream job."</p>
+                                    <p class="font-titlem dark-blue margin regular-font">Jenny Harra /<span class=" regular-font opacity-blue font-titlem">OWW Studio</span></p>
+                                </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="glide__bullets ta-center font-titlenormal" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            <button class="glide__bullet" data-glide-dir="=4"></button>
+                        </div>
+
+                    </div>
+                </div>
+                      
+            </div>
+        </section>
+
+        <section class="fourth-section ta-center">
+            <div class="container ">
+                <h2 class="font-titles regular-font fontweight-b">WORKS WITH ANY PLATFORM</h2>
+
+                <div class="images display-f">
+                    <img src="amazon.png" alt="amazon">
+                    <img src="etsy.png" alt="etsy">
+                    <img src="clickbank.png" alt="clickbank">
+                    <img src="logo.png" alt="logo">
+                    <img src="youtube.png" alt="youtube">
+                    <img src="kickstarter.png" alt="kickstarted">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="ta-center footer regular-font font-titles grey">
+        <p>© 2021 autocryp All Right Reserved</p>
+        <ul>
+            <li class="display-ib"><a class="grey" href="javascript.void()">Benefit</a></li>
+            <li class="display-ib">/</li>
+            <li class="display-ib"><a class="grey" href="javascript.void()">Pricing</a></li>
+            <li class="display-ib">/</li>
+            <li class="display-ib"><a class="grey" href="javascript.void()">Testimonials</a></li>
+            <li class="display-ib">/</li>
+            <li class="display-ib"><a class="grey" href="javascript.void()">Clients</a> </li>
+        </ul>
+
+    </footer>
+
+    <script type="text/javascript" src="webpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        
+        new Glide('.glide',{
+            type: 'carousel',
+            focusAt: 0,
+            perView:2.2,
+            gap: 10,
+
+                breakpoints:{
+                    0:{
+                        perView:1
+                    },
+                    600:{
+                        perView:1
+                    },
+                    1000:{
+                        perView:1
+                    },
+                    1024:{
+                        perView:2
+                    },
+                    1400:{
+                        perView:2.2
+                    }
+
+                }
+
+        }
+        ).mount();
+
+    </script>
+
+</body>
+
+</html>

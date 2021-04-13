@@ -1,0 +1,36 @@
+.font{
+    &-titles{
+        font-size: 16px;
+    }
+    &-titlem{
+        font-size:18px;
+    }
+    &-titlenormal{
+        font-size:24px;
+    }
+    &-titlel{
+        font-size:26px;
+    }
+    &-titlexl{
+        font-size:40px;
+    }
+    &-titlexxl{
+        font-size:48px;
+    }
+    &-titlelarge{
+        font-size:72px;
+    }
+}
+
+.fontweight{
+    &-b{
+        font-weight:bold;
+    }
+    &-m{
+        font-weight:500;
+    }
+}
+
+.regular-font{
+    font-family:$primary-font;
+}

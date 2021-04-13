@@ -1,0 +1,19 @@
+.fourth-section{
+    margin-top:200px;
+
+    .images{
+        margin-top:45px;
+        justify-content: space-evenly;
+        @include laptop{
+            display:block !important;
+        }
+        }
+        img{
+            @include laptop{
+                display:block !important;
+                margin:auto;
+                margin-top:20px;
+            }
+
+        }
+    }

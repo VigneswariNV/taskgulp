@@ -1,0 +1,42 @@
+.btn{
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+    background-color: $button-color;
+    color:$white;
+}
+.radius-s{
+    @include radius(5px);
+}
+.radius-m{
+    @include radius(10px);
+}
+.primary-button{
+    @include lineheight(2.13);
+    padding: 10px 25px 10px 26px;
+}
+.secondary-padding{
+    padding: 20px 46px 20px;
+    @include laptop{
+        padding:10px 20px 10px;
+    }
+}
+.third-button{
+    
+    color:$font-button;
+    background-color:$image-background;
+}
+.third-button:focus{
+    color:$button-color;
+    background-color:$white ;
+    
+}
+.btn-padding{
+    padding: 20px 35px;
+    border:solid 1px $border-color;
+    @include laptop{
+        padding:10px 20px;
+        
+    }
+}
+.login{
+    margin-right:38px;
+}

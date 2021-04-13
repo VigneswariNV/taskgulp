@@ -1,0 +1,52 @@
+main{
+    background-color: $primary-color;
+
+    .initialsection{
+        .sub-section{
+            background-color: $white;
+            justify-content: space-between;
+            padding:65px 80px 55px 80px;
+            margin-top:-80px;
+            @include radius(10px);
+            position:relative;
+            @include laptop{
+                display:block !important;
+                padding:10px 20px;
+            }
+            
+            .sub-inner-section{
+                @include width(300px);
+                @include laptop{
+                    @include width(100%);
+                    text-align: center;
+                   
+                }
+                img{
+                    padding:20px 16px 20px;
+                    background-color:$image-background ;
+                    @include radius(6px);
+                    margin:25px 0 25px 0;
+                }
+                hr{
+                    @include width(60px);
+                    background-color: $button-color;
+                    margin:20px 0 20px 0;
+                    @include laptop{
+                       margin:auto;
+                        @include width(50%);
+                        margin-top:20px;
+                        margin-bottom:20px;
+                       
+                    }
+                }
+                
+                p{
+                    @include lineheight(2);
+                }
+                
+            }
+
+        }
+
+    }
+}

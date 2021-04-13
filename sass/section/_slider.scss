@@ -1,0 +1,63 @@
+.second-section{
+    margin:200px 0 ;
+    @include laptop{
+        margin:100px 0;
+    }
+    h3{
+        @include lineheight(1.6);
+        br{
+        @include laptop{
+            display:none;
+        }
+    }
+    }
+    .tabs{
+        margin:auto;
+        margin-top:60px;
+        @include width(360px);
+        @include radius(5px);
+        @include laptop{
+            @include width(100%);
+        }
+    }
+    .button{
+        cursor:pointer;
+    }
+    .outline{
+        outline:none;
+    }
+    .slider{
+        justify-content: space-evenly;
+        margin-top:65px;
+        @include laptop{
+            display:block !important;
+        }
+         .price{
+             margin-top:30px;
+             @include lineheight(0.89);
+         }
+         ul{
+             margin-top:60px;
+             list-style-type: none;
+             height:180px;
+
+             li{
+                 @include lineheight(2);
+                 letter-spacing: 0.18px;
+             }
+            }
+        div{
+            padding:55px 60px;
+            @include laptop{
+                padding:40px 40px;
+            }
+            
+        }
+        div:nth-child(2){
+            background-color: $white;
+            border-top:solid 3px $top-border;
+        }
+        
+
+    }
+}
