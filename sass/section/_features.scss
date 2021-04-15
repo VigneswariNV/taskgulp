@@ -7,6 +7,7 @@ main{
             justify-content: space-between;
             padding:65px 80px 55px 80px;
             margin-top:-80px;
+            @extend %display-f;
             @include radius(10px);
             position:relative;
             @include laptop{

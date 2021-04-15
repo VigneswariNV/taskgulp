@@ -3,14 +3,15 @@
 
     .images{
         margin-top:45px;
+        @extend %display-f;
         justify-content: space-evenly;
         @include laptop{
-            display:block !important;
+            display:block ;
         }
         }
         img{
             @include laptop{
-                display:block !important;
+                display:block ;
                 margin:auto;
                 margin-top:20px;
             }

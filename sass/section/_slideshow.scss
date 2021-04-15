@@ -2,6 +2,7 @@
     
     .box{
         @include width(380px);
+        @extend %display-ib;
             height:420px;
             position:relative;
             padding-top:30px;
@@ -27,39 +28,66 @@
     .main-box{
         background-color:$secondary-color;
         @include width(800px);
+        margin-right:-20px;
         height: 970px;
         @include laptop{
          @include width(100%);
+         margin-right:0;
         } 
     }
     .wrapper{  
         @include width(1050px);
         margin-top:-950px;
+        margin-right:-20px;
         @include laptop{
             @include width(100%);
+            margin-right:0;
         }
+        .glide__slide--active{
+            .div{
+                background-color: $button-color ;
+                color:$white ;
+            span{
+                color:$white ;
+            }
+            .icon{
+                background-image: url(sliderimg.svg);
+                
+            }
+            }
+          }
 
         li{
             @include lineheight(2);
             margin-top:260px;
-            div{
+            .div{
             @include width(420px);
             padding: 80px 60px 63px 50px;
             background-color: $white;
+            color:$grey;
+            span{
+                color:$opacity;
+            }
+            .icon{
+                background-image: url(whitesvg.svg);
+            }
             @include laptop{
                 @include width(100%);
                 padding:60px 20px;
                
             }
+        }
+        .icon{
+            width:60px;
+            height:60px;
+        }
+           
             .height{
                 height: 210px;
             } 
             span{
                 margin-left:5px;
             }  
-            }
-            .green-bg{
-                background-color: $button-color;
             }
 
             .margin{
@@ -70,4 +98,4 @@
             }
         }
             
-        }
+     
