@@ -55,6 +55,12 @@
             }
             }
           }
+        .glide__slide--active svg{
+            fill:#fff;
+        }
+         svg{
+        fill: #1FDB84;
+        }
 
         li{
             @include lineheight(2);
